@@ -10,4 +10,13 @@ The model is trained using XGBoost with preprocessed customer data, utilizing th
 - **Geography**
   
 The preprocessing steps include handling missing values and applying OneHotEncoding on the Gender and Geography features.
+
+## **Prerequisites**:
+In order to run this project, you need the following dependencies installed:
+- Python 3.x
+- pandas
+- scikit-learn
+- xgboost
+- numpy
+
   
