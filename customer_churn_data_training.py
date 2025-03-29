@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
 # Load training data
-training_data = pd.read_csv("dataset/Churn_Modelling_Prepared.csv")
+training_data = pd.read_csv("./dataset/Churn_Modelling_Prepared.csv")
 
 # Split training data in features and target
 X = training_data.drop(columns=['Exited'])
@@ -67,4 +67,4 @@ print(f"AUC-ROC: {roc_auc}")
 print('Finished training')
 
 # Saving the model
-model.save_model( '.model/customer_churn_model')
+model.save_model( './model/customer_churn_model')
